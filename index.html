@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Automatizaciones IA — Servicios</title>
+  <meta name="description" content="Automatizaciones de mensajes, llamadas y procesos con IA para empresas. Ahorra tiempo, reduce errores y escala tu operación.">
+  <link rel="icon" href="assets/logo.png">
+  <style>
+    :root{--accent:#ff6a00;--dark:#141414;--muted:#6b6b6b;--card:#ffffff;--bg:#f7f7fb}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; color:var(--dark);background:var(--bg)}
+    a{color:inherit}
+    .container{width:min(1100px,92%);margin:0 auto}
+    header{background:#fff;border-bottom:1px solid #e9e9ef}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:44px;height:44px;object-fit:contain}
+    nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}
+    nav a{font-weight:600;color:#222;text-decoration:none}
+    .hero{display:grid;grid-template-columns:1fr 460px;gap:30px;align-items:center;padding:56px 0}
+    .hero h1{font-size:clamp(28px,4vw,44px);line-height:1.05;margin:0 0 12px}
+    .hero p{color:var(--muted);margin:0 0 22px}
+    .btn{display:inline-block;background:var(--accent);color:#fff;padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:700}
+    .subtle{font-size:14px;color:var(--muted);margin-top:10px}
+    .card{background:var(--card);border-radius:14px;padding:20px;box-shadow:0 6px 20px rgba(16,24,40,0.06)}
+
+    /* features */
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
+    .feature{padding:18px;border-radius:10px;background:linear-gradient(180deg,#fff,#fbfbff);border:1px solid #f0eff6}
+    .feature h4{margin:8px 0 6px}
+    .feature p{margin:0;color:var(--muted);font-size:14px}
+
+    /* right column */
+    .panel-cta{display:flex;flex-direction:column;gap:12px}
+    .stat{display:flex;justify-content:space-between;align-items:center}
+    .price{font-size:28px;font-weight:800}
+    .small{font-size:13px;color:var(--muted)}
+
+    /* productos / servicios list */
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:48px 0}
+    .service-card{background:#fff;border-radius:12px;padding:18px;border:1px solid #efeff7}
+    .service-card h3{margin:6px 0}
+    .service-card p{color:var(--muted);font-size:14px}
+
+    /* proceso / pasos */
+    .steps{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:40px}
+    .step{flex:1;min-width:200px;background:#fff;padding:18px;border-radius:10px;border:1px solid #f0eff6}
+
+    /* contacto */
+    .contact{display:flex;gap:20px;align-items:flex-start;padding:36px 0}
+    .contact form{flex:1;display:flex;flex-direction:column;gap:10px}
+    input,textarea,select{padding:12px;border-radius:8px;border:1px solid #e6e6ef;font-size:14px}
+    button[type=submit]{background:var(--dark);color:#fff;padding:12px;border-radius:10px;border:0;font-weight:700}
+
+    footer{padding:28px 0;color:var(--muted);border-top:1px solid #ececf2}
+
+    /* responsive */
+    @media (max-width:920px){.hero{grid-template-columns:1fr;gap:18px}.features{grid-template-columns:1fr 1fr}.services{grid-template-columns:1fr 1fr}.contact{flex-direction:column}}
+    @media (max-width:560px){.features{grid-template-columns:1fr}.services{grid-template-columns:1fr}.nav ul{display:none}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <img src="assets/logo.png" alt="logo" class="logo">
+        <div>
+          <div style="font-weight:800">Automatizaciones IA</div>
+          <div style="font-size:12px;color:#7a7a85">Mensajes · Llamadas · Flujos</div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#productos">Servicios</a></li>
+          <li><a href="#proceso">Proceso</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <h1>Automatiza mensajes y llamadas con IA y ahorra tiempo hoy</h1>
+        <p>Implementamos flujos de comunicación (WhatsApp, SMS, llamadas automáticas y chatbots) que responden, clasifican y convierten leads sin que tu equipo tenga que intervenir en cada paso.</p>
+        <a class="btn" href="#contacto">Solicitar demo</a>
+        <div class="subtle">Clientes: e‑commerces, agencias y pymes que necesitan soporte 24/7.</div>
+
+        <div class="features" style="margin-top:28px">
+          <div class="feature">
+            <strong>Integraciones</strong>
+            <p>Conecta tu CRM, Shopify, Zapier, o sistema propio en pocas horas.</p>
+          </div>
+          <div class="feature">
+            <strong>Personalización</strong>
+            <p>Mensajes y escenarios adaptados a tu tono de marca y objetivos.</p>
+          </div>
+          <div class="feature">
+            <strong>Escalado</strong>
+            <p>De 10 a 10.000 conversaciones sin aumentar costes de atención.</p>
+          </div>
+        </div>
+      </div>
+
+      <aside class="card panel-cta">
+        <div>
+          <div style="font-size:13px;color:var(--muted)">Plan desde</div>
+          <div class="price">€199<span style="font-size:14px;color:var(--muted);font-weight:600"> / mes</span></div>
+          <div class="small">Implementación rápida · Soporte · Monitorización</div>
+        </div>
+
+        <div style="margin-top:12px">
+          <div class="stat"><div class="small">Tiempo medio de implementación</div><div>3–7 días</div></div>
+          <div class="stat"><div class="small">SLA de respuesta</div><div>24h</div></div>
+        </div>
+
+        <a class="btn" href="#contacto" style="margin-top:14px;text-align:center">Pedir demo</a>
+      </aside>
+    </section>
+
+    <section id="productos">
+      <h2 style="margin-top:18px">Servicios destacados</h2>
+      <div class="services">
+        <div class="service-card">
+          <h3>Automatización de mensajes (WhatsApp + SMS)</h3>
+          <p>Campañas automatizadas, respuesta a FAQs, recordatorios y recuperación de carritos.</p>
+        </div>
+        <div class="service-card">
+          <h3>Llamadas automáticas y notificaciones</h3>
+          <p>IVR básico, confirmaciones por voz y llamadas programadas para cobros o citas.</p>
+        </div>
+        <div class="service-card">
+          <h3>Implementación de chatbots con IA</h3>
+          <p>Chatbots que entienden consultas y escalan a humanos solo cuando hace falta.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="proceso">
+      <h2>Cómo trabajamos</h2>
+      <div class="steps">
+        <div class="step">
+          <strong>1. Diagnóstico</strong>
+          <p class="small">Analizamos procesos, volúmenes y puntos de fricción.</p>
+        </div>
+        <div class="step">
+          <strong>2. Diseño</strong>
+          <p class="small">Proponemos el flujo óptimo y la integración técnica.</p>
+        </div>
+        <div class="step">
+          <strong>3. Implementación</strong>
+          <p class="small">Configuramos, probamos y validamos con datos reales.</p>
+        </div>
+        <div class="step">
+          <strong>4. Monitorización</strong>
+          <p class="small">Medimos KPIs y optimizamos continuamente.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contacto">
+      <div style="flex:1">
+        <h2>Habla con nosotros</h2>
+        <p class="small">Reserva una demo, pide presupuesto o cuéntanos tu caso.</p>
+        <div class="card" style="margin-top:12px">
+          <strong>Contacto rápido</strong>
+          <p class="small" style="margin-top:6px">Correo: hola@automatizacionesia.example<br>Tel: +34 600 000 000</p>
+        </div>
+      </div>
+
+      <form id="contact-form">
+        <input name="name" placeholder="Nombre" required>
+        <input name="email" type="email" placeholder="Correo electrónico" required>
+        <select name="service">
+          <option value="">Selecciona servicio</option>
+          <option>Mensajería (WhatsApp/SMS)</option>
+          <option>Llamadas automáticas</option>
+          <option>Chatbot IA</option>
+          <option>Integración / Otros</option>
+        </select>
+        <textarea name="message" rows="5" placeholder="Cuéntanos tu caso" required></textarea>
+        <button type="submit">Enviar consulta</button>
+      </form>
+    </section>
+
+    <section style="margin:36px 0">
+      <h3>Preguntas frecuentes</h3>
+      <div style="display:grid;gap:8px;margin-top:12px">
+        <div class="card"><strong>¿Cuánto tarda la implementación?</strong><p class="small">Depende del alcance: de 3 a 14 días.</p></div>
+        <div class="card"><strong>¿Puedo integrarlo con Shopify o un CRM?</strong><p class="small">Sí: integraciones vía API, Zapier o conectores nativos.</p></div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container" style="display:flex;justify-content:space-between;align-items:center">
+        <div>© 2025 Automatizaciones IA</div>
+        <div class="small">Política de privacidad · Términos</div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // Manejo simple del formulario: enviar a tu email o backend (placeholder)
+    document.getElementById('contact-form').addEventListener('submit', function(e){
+      e.preventDefault();
+      const data = new FormData(e.target);
+      // Aquí enviarías `data` a tu servidor (fetch) o a un servicio como Formspree/Netlify Forms
+      alert('Gracias, hemos recibido tu consulta. Te contactaremos pronto.');
+      e.target.reset();
+    });
+  </script>
+</body>
+</html>
